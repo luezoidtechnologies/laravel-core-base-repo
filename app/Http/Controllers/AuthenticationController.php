@@ -9,6 +9,7 @@ use App\Repositories\UserRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Request\LoginRequest;
+use Luezoid\Laravelcore\Constants\ErrorConstants;
 use Luezoid\Laravelcore\Exceptions\InvalidCredentialsException;
 use Luezoid\Laravelcore\Jobs\BaseJob;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
@@ -23,7 +24,7 @@ class AuthenticationController extends BaseController
         $validator = $request->getValidator();
 
         if ($validator->fails()) {
-            return $this->standardResponse(null, $validator->errors()->messages(), 400, "");
+            return $this->standardResponse(null, $validator->errors()->messages(), 400, ErrorConstants::TYPE_BAD_REQUEST_ERROR);
         }
         $username = $request->json('email');
         $password = $request->json('password');
