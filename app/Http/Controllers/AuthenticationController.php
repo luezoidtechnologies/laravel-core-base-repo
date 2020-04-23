@@ -4,9 +4,9 @@
 namespace App\Http\Controllers;
 
 
+use App\Http\Request\LoginRequest;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-use App\Http\Request\LoginRequest;
 use Luezoid\Laravelcore\Constants\ErrorConstants;
 use Luezoid\Laravelcore\Exceptions\InvalidCredentialsException;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
