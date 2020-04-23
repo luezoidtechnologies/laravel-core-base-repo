@@ -26,15 +26,15 @@ class AuthenticationController extends BaseController
         if ($validator->fails()) {
             return $this->standardResponse(null, $validator->errors()->messages(), 400, ErrorConstants::TYPE_BAD_REQUEST_ERROR);
         }
-        $username = $request->json('email');
+        $email = $request->json('email');
         $password = $request->json('password');
 
-        $user = User::where('email', '=', $username)->first();
+        $user = User::where('email', '=', $email)->first();
         if (!$user) {
             throw new BadRequestHttpException(__('User not found'));
         }
 
-        if (!Auth::attempt(['email' => $username, 'password' => $password])) {
+        if (!Auth::attempt(['email' => $email, 'password' => $password])) {
             throw new InvalidCredentialsException(__('Invalid Credentials'), 401);
         }
 
