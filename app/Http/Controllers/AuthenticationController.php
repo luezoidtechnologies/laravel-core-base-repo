@@ -29,6 +29,7 @@ class AuthenticationController extends BaseController
         $email = $request->json('email');
         $password = $request->json('password');
 
+        /** @var User $user */
         $user = User::where('email', '=', $email)->first();
         if (!$user) {
             throw new BadRequestHttpException(__('User not found'));
