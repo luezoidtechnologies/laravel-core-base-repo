@@ -4,15 +4,22 @@
 namespace App\Http\Controllers;
 
 
+use App\Constants\AppConstants;
 use App\Http\Request\LoginRequest;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Luezoid\Laravelcore\Constants\ErrorConstants;
 use Luezoid\Laravelcore\Exceptions\InvalidCredentialsException;
+use Luezoid\Laravelcore\Http\Controllers\ApiController;
 use Symfony\Component\HttpKernel\Exception\BadRequestHttpException;
 
-class AuthenticationController extends BaseController
+class AuthenticationController extends ApiController
 {
+    /**
+     * @param LoginRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     * @throws InvalidCredentialsException
+     */
     public function doLogin(LoginRequest $request)
     {
         $validator = $request->getValidator();
@@ -35,7 +42,7 @@ class AuthenticationController extends BaseController
 
         $result = [
             'user' => $user,
-            'token' => $user->createToken('App Personal Access Client')->accessToken
+            'token' => $user->createToken(AppConstants::DEFAULT_PASSPORT_TOKEN_NAME)->accessToken
         ];
         return $this->standardResponse($result);
     }

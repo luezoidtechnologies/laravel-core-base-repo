@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "961c032c4b12387b2b486e3a0ea927c5",
+    "content-hash": "1ccd554cd67c54a21c878dc68f08ba09",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -60,16 +60,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.135.3",
+            "version": "3.135.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0f6f6e8f4a44193908e18b8c7b8530b02f5bc428"
+                "reference": "fb6f4a12d9ad1b8fc1481aef61ed1f8a9fe2164b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0f6f6e8f4a44193908e18b8c7b8530b02f5bc428",
-                "reference": "0f6f6e8f4a44193908e18b8c7b8530b02f5bc428",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fb6f4a12d9ad1b8fc1481aef61ed1f8a9fe2164b",
+                "reference": "fb6f4a12d9ad1b8fc1481aef61ed1f8a9fe2164b",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +140,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-04-23T18:18:24+00:00"
+            "time": "2020-04-24T18:14:04+00:00"
         },
         {
             "name": "aws/aws-sdk-php-laravel",
@@ -1231,16 +1231,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v7.7.1",
+            "version": "v7.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4de129177f889cd7672e732d8808020adfb7b121"
+                "reference": "cdc6d7e6c744f4d8f7d61102aea9b111550cd297"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4de129177f889cd7672e732d8808020adfb7b121",
-                "reference": "4de129177f889cd7672e732d8808020adfb7b121",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/cdc6d7e6c744f4d8f7d61102aea9b111550cd297",
+                "reference": "cdc6d7e6c744f4d8f7d61102aea9b111550cd297",
                 "shasum": ""
             },
             "require": {
@@ -1379,7 +1379,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-04-21T18:57:12+00:00"
+            "time": "2020-04-24T17:21:56+00:00"
         },
         {
             "name": "laravel/passport",
@@ -1575,16 +1575,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "c995966d35424bae20f76f8b31248099487a3f57"
+                "reference": "9e780d972185e4f737a03bade0fd34a9e67bbf31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c995966d35424bae20f76f8b31248099487a3f57",
-                "reference": "c995966d35424bae20f76f8b31248099487a3f57",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/9e780d972185e4f737a03bade0fd34a9e67bbf31",
+                "reference": "9e780d972185e4f737a03bade0fd34a9e67bbf31",
                 "shasum": ""
             },
             "require": {
@@ -1645,7 +1645,7 @@
                 "md",
                 "parser"
             ],
-            "time": "2020-04-20T13:36:51+00:00"
+            "time": "2020-04-24T13:39:56+00:00"
         },
         {
             "name": "league/event",
@@ -1860,16 +1860,16 @@
         },
         {
             "name": "luezoid/laravel-core",
-            "version": "v7.0",
+            "version": "v7.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luezoidtechnologies/laravel-core.git",
-                "reference": "23366a97d6e9a5603fa5c94d5cb27c89f42b1b0e"
+                "reference": "9917133b065757af8fc475d23b4f0543845656dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luezoidtechnologies/laravel-core/zipball/23366a97d6e9a5603fa5c94d5cb27c89f42b1b0e",
-                "reference": "23366a97d6e9a5603fa5c94d5cb27c89f42b1b0e",
+                "url": "https://api.github.com/repos/luezoidtechnologies/laravel-core/zipball/9917133b065757af8fc475d23b4f0543845656dd",
+                "reference": "9917133b065757af8fc475d23b4f0543845656dd",
                 "shasum": ""
             },
             "require": {
@@ -1909,7 +1909,7 @@
                     "email": "manoj@luezoid.com"
                 }
             ],
-            "time": "2020-04-23T19:42:41+00:00"
+            "time": "2020-04-24T18:28:06+00:00"
         },
         {
             "name": "monolog/monolog",
