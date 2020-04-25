@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 
 use App\Constants\AppConstants;
-use App\Http\Request\LoginRequest;
+use App\Http\Requests\LoginRequest;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Luezoid\Laravelcore\Constants\ErrorConstants;
